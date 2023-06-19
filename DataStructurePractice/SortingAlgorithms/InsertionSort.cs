@@ -9,9 +9,13 @@ public class InsertionSort : TestBaseClass
 
         for (int i = 1; i < arr.Length; i++)
         {
-            for (int j = i;  j > 0 && arr[j - 1] > arr[j]; j--)
+            for (int j = i; j > 0; j--)
             {
-                SortingHelper.Swap(arr, j, j - 1);
+                if (arr[j - 1] > arr[j])
+                {
+                    SortingHelper.Swap(arr, j, j - 1);
+                }
+                else { break; }
             }
         }
     }

@@ -19,6 +19,7 @@ public class BubbleSort : TestBaseClass
                 {
                     SortingHelper.SwapXor(array, i, i + 1);
                 }
+                else { continue; }
             }
         }
     }
