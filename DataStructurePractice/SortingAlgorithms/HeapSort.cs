@@ -10,7 +10,7 @@ public class HeapSort : TestBaseClass
         for (int i = 0; i < arr.Length; i++)
         {
             HeapInsert(arr, i);
-        }
+    }
 
         for (int heapSize = arr.Length; heapSize > 0; heapSize--)
         {
