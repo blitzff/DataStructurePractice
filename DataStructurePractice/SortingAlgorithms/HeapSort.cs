@@ -10,12 +10,12 @@ public class HeapSort : TestBaseClass
         for (int i = 0; i < arr.Length; i++)
         {
             HeapInsert(arr, i);
-    }
+        }
 
         for (int heapSize = arr.Length; heapSize > 0; heapSize--)
         {
             SortingHelper.Swap(arr, 0, heapSize-1 /*the last index*/);
-            Heapify(arr, 0, heapSize-1 /*causing the swap, the heapSize - 1*/);
+            Heapify(arr, 0, heapSize-1 /*because of the swap, the heapSize - 1*/);
         }
     }
 
