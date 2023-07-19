@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="LeetCode\" />
     <Folder Include="Tree\" />
   </ItemGroup>
 
