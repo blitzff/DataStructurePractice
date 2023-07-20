@@ -32,25 +32,14 @@ public class UnionSetArray
         return FindHead(p) == FindHead(q);
     }
 
-    public int FindHead(int p)
+    public int FindHead(int a)
     {
-        var stack = new Stack<int>();
+        if (father[a] == a)
+            return a;
 
-        // 跟随链接找到根节点
-        while (p != father[p])
-        {
-            stack.Push(p);
-            p = father[p];
-        }
-
-        // 路径压缩
-        while (stack.Count > 0)
-        {
-            father[stack.Pop()] = p;
-        }
-
-        return p;
+        return father[a] = FindHead(father[a]);
     }
+
     public void Union(int p, int q)
     {
         int i = FindHead(p);
