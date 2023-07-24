@@ -1,4 +1,4 @@
-namespace DataStructurePractice.LeetCode;
+namespace DataStructurePractice.CrackingTheCodingInterview;
 
 /// <summary>
 /// https://leetcode.cn/problems/max-area-of-island/
@@ -50,8 +50,8 @@ public class MaxAreaOfIslandSolution
 
         public UnionSet(int[][] grid, int m, int n)
         {
-            father = new int[m*n];
-            size = new int[m*n];
+            father = new int[m * n];
+            size = new int[m * n];
 
             for (int i = 0; i < m; i++)
             {

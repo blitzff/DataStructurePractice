@@ -1,4 +1,4 @@
-namespace DataStructurePractice.LeetCode;
+namespace DataStructurePractice.CrackingTheCodingInterview;
 
 /// <summary>
 /// https://leetcode.cn/problems/number-of-provinces/

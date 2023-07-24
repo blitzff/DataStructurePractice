@@ -1,4 +1,4 @@
-namespace DataStructurePractice.LeetCode;
+namespace DataStructurePractice.CrackingTheCodingInterview;
 
 /// <summary>
 /// https://leetcode.cn/problems/number-of-islands/
@@ -32,7 +32,7 @@ public class Solution
                 var rightId = i * w + jright;
                 var downId = idown * w + j;
                 var curId = i * w + j;
-                
+
                 if (jright < w && us.idNodeMap.ContainsKey(rightId))
                 {
                     us.Union(us.idNodeMap[rightId], us.idNodeMap[curId]);
