@@ -18,7 +18,7 @@ public class ValidPalindromeIISolution
             }
             start++; end--;
         }
-
+        
         return start >= end
             || IsPalindrome(s, start + 1, end)
             || IsPalindrome(s, start, end - 1);
