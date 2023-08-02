@@ -34,20 +34,6 @@ public class Graph
         /// 连接直接出去的孩子节点的边
         /// </summary>
         public List<Edge> Edges { get; }
-
-        public Node(
-            int value,
-            int @in,
-            int @out,
-            List<Node> children,
-            List<Edge> edges)
-        {
-            Id = value;
-            In = @in;
-            Out = @out;
-            Children = children;
-            Edges = edges;
-        }
     }
 
     public class Edge
@@ -55,15 +41,6 @@ public class Graph
         public int Weight { get; }
         public Node From { get; set; }
         public Node To { get; set; }
-        public Edge(
-            int weight,
-            Node from,
-            Node to)
-        {
-            Weight = weight;
-            From = from;
-            To = to;
-        }
     }
 }
 
