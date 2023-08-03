@@ -2,7 +2,7 @@ using static DataStructurePractice.Graph.Graph;
 
 namespace DataStructurePractice.LeetCode;
 
-public class GraphHelper
+public class Traverse
 {
     public static void bfs(Node node)
     {
@@ -53,4 +53,22 @@ public class GraphHelper
             }
         }
     }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="root"></param>
+    /// <param name="record"></param>
+    private void dfs(Node root, List<int> record)
+    {
+        record.Add(root.Id);
+        // record.ToList();
+
+        foreach (var n in root.Children)
+        {
+            dfs(n, record);
+            record.RemoveAt(record.Count - 1);
+        }
+    }
+
 }
