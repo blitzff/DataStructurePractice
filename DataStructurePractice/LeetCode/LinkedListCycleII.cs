@@ -5,18 +5,6 @@ namespace DataStructurePractice.LeetCode;
 /// </summary>
 public class LinkedListCycle
 {
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(
-            int val = 0,
-            ListNode next = null)
-        {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     public ListNode DetectCycle(ListNode head)
     {
@@ -47,5 +35,18 @@ public class LinkedListCycle
             fast = fast.next;
         }
         return slow;
+    }
+}
+
+public class ListNode
+{
+    public int val;
+    public ListNode next;
+    public ListNode(
+        int val = 0,
+        ListNode next = null)
+    {
+        this.val = val;
+        this.next = next;
     }
 }
