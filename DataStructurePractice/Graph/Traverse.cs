@@ -1,6 +1,6 @@
 using static DataStructurePractice.Graph.Graph;
 
-namespace DataStructurePractice.LeetCode;
+namespace DataStructurePractice.Graph;
 
 public class Traverse
 {
